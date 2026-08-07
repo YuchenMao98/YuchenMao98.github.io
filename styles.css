@@ -209,6 +209,14 @@ h2 {
   margin-top: 10px;
 }
 
+.research-index {
+  margin-bottom: 0;
+}
+
+.research-area p {
+  margin-bottom: 12px;
+}
+
 .paper-list {
   margin: 0;
   padding: 0;
