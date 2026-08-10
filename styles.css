@@ -190,6 +190,17 @@ h1 {
   line-height: 1.15;
 }
 
+.chinese-name {
+  margin-left: 0.32em;
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 0.52em;
+  font-weight: inherit;
+  letter-spacing: 0.04em;
+  vertical-align: 0.12em;
+  white-space: nowrap;
+}
+
 .name-rule {
   width: 42px;
   height: 3px;
