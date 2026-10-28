@@ -17,7 +17,7 @@
   <meta property="og:url" content="https://yuchenmao98.github.io/research.html">
   <meta property="og:image" content="https://yuchenmao98.github.io/assets/yuchen-mao.jpg">
   <meta name="twitter:card" content="summary">
-  <link rel="stylesheet" href="styles.css?v=20261026">
+  <link rel="stylesheet" href="styles.css?v=20261027-release">
   <!-- Cloudflare Web Analytics -->
   <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"b640b8f3190f4494a3705dd32028accd"}'></script>
   <!-- End Cloudflare Web Analytics -->
@@ -52,32 +52,76 @@
     <div class="page-content research-content">
       <h1 class="page-title">Research</h1>
 
-    <p class="research-lead">
-      My research interests lie at the intersection of operations research
-      and statistics, focusing on methodological development and
-      managerial insights.
-    </p>
+      <section class="research-map" aria-labelledby="research-root" aria-describedby="research-summary">
+        <h2 id="research-root" class="research-root">Better decisions from data</h2>
+        <ul class="research-branches" role="list">
+          <li class="research-branch">
+            <div class="branch-heading">
+              <h3 class="branch-title">Planning ahead</h3>
+              <p class="branch-context">Before demand is known</p>
+            </div>
+            <ul class="research-paths" role="list">
+              <li class="research-path">
+                <h4>Which patterns matter?</h4>
+                <p>Use relationships across products, locations, and time to
+                  inform production and inventory plans.</p>
+              </li>
+              <li class="research-path">
+                <h4>What if forecasts are wrong?</h4>
+                <p>Study how prediction errors affect decisions and how to
+                  reduce their impact.</p>
+              </li>
+            </ul>
+          </li>
+          <li class="research-branch">
+            <div class="branch-heading">
+              <h3 class="branch-title">Adapting over time</h3>
+              <p class="branch-context">As new information arrives</p>
+            </div>
+            <ul class="research-paths" role="list">
+              <li class="research-path">
+                <h4>How can we plan further ahead?</h4>
+                <p>Estimate future costs and improve decisions without
+                  examining every possible future scenario.</p>
+              </li>
+              <li class="research-path">
+                <h4>What do new data reveal?</h4>
+                <p>Explore how new observations can guide decisions when some
+                  information remains hidden.</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
 
-    <section class="research-area" aria-labelledby="robust-title">
-      <h2 id="robust-title">Predictive robust decision-making</h2>
-      <p>
-        I develop data-driven optimization models that incorporate predictive
-        information and structural features of data for operational
-        decision-making under uncertainty. I study two-stage and multistage
-        stochastic and robust optimization problems, examining their
-        computational methods and statistical performance.
+      <p id="research-summary" class="research-summary">
+        My research lies at the intersection of operations research and
+        statistics. I study how businesses can use data to plan production,
+        inventory, and supply networks when demand is uncertain. These questions
+        connect my work on learning from data, accounting for prediction errors,
+        and making decisions over time.
       </p>
-    </section>
-
-    <section class="research-area" aria-labelledby="learning-title">
-      <h2 id="learning-title">Statistics and econometrics for operations management</h2>
-      <p>
-        I use econometric and statistical learning methods to study operations
-        management problems and uncover managerial insights from operational
-        data. I am also interested in how newer AI tools, including LLMs, can
-        support prediction and decision-making in operations management.
-      </p>
-    </section>
+      <details class="research-methods">
+        <summary>Technical topics</summary>
+        <div class="research-methods-content">
+          <p>The common framework is contextual optimization: using available
+            information to guide decisions under uncertainty.</p>
+          <p><strong>Planning ahead</strong> covers two-stage and bilevel
+            problems, with work on regression with correlated uncertainties,
+            latent factors, time-series forecasting, and bias correction
+            through Neyman orthogonality and double machine learning.</p>
+          <p><strong>Adapting over time</strong> covers multistage problems,
+            including value estimation, stochastic approximation, and
+            multi-index Monte Carlo, alongside an interest in partially
+            observable Markov decision processes.</p>
+          <p><strong>Value Estimation</strong> estimates the expected cost
+            associated with a given first-stage decision, with later decisions
+            optimized as uncertainty unfolds.</p>
+          <p><strong>Stochastic Approximation</strong> studies gradient
+            estimation and first-stage optimization, using the estimated
+            gradients to improve the initial decision.</p>
+        </div>
+      </details>
       <footer class="source-footer"><p>Yuchen Mao · Last updated October 2026</p></footer>
     </div>
   </main>
