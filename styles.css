@@ -247,6 +247,13 @@ h2 { font-size: 32px; line-height: 1.2; letter-spacing: -.02em; margin-bottom: 2
   .research-path h4, .research-path p { font-size: var(--text-size); }
   .research-summary { margin-top: 30px; }
 }
+/* Long paper and talk titles can use the right column without moving its left edge. */
+@media (min-width: 851px) {
+  .publications-page .content-main,
+  .talks-page .content-main { padding-right: var(--edge); }
+  .publication-content,
+  .talk-content { max-width: none; }
+}
 .publication-content section > h2::before {
   content: ""; display: block; width: 26px; height: 4px;
   background: var(--accent); margin-bottom: 14px;
@@ -254,7 +261,7 @@ h2 { font-size: 32px; line-height: 1.2; letter-spacing: -.02em; margin-bottom: 2
 .paper-list { list-style: none; margin: 0; padding: 0; }
 .paper-list li + li { margin-top: 30px; }
 .paper-list p + p { margin-top: 7px; }
-.paper-title { font-family: var(--display-serif); font-weight: 400; font-size: 20px; line-height: 1.35; letter-spacing: 0; }
+.paper-title { font-family: var(--display-serif); font-weight: 400; font-size: 19px; line-height: 1.35; letter-spacing: 0; }
 .paper-title a,
 .paper-title a:visited,
 .paper-title a:hover,
@@ -295,7 +302,8 @@ h2 { font-size: 32px; line-height: 1.2; letter-spacing: -.02em; margin-bottom: 2
 /* Keep the recording light to load and subordinate to the talk information. */
 .talk-links { display: flex; flex-wrap: wrap; gap: 4px 24px; margin-top: 14px; font-family: var(--sans); font-size: 15px; }
 .talk-links a { display: inline-flex; align-items: center; min-height: 44px; }
-.talk-video { margin: 18px 0 0; }
+/* Match Home and Research's reading width while leaving long talk titles wider. */
+.talk-video { max-width: 640px; margin: 18px 0 0; }
 .talk-video video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: var(--surface); }
 .talk-video figcaption { margin-top: 10px; font-family: var(--sans); font-size: 15px; line-height: 1.55; color: var(--muted); }
 .talks-page .paper-list li + li { margin-top: 48px; }
